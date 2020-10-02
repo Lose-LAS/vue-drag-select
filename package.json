@@ -11,18 +11,19 @@
     "select"
   ],
   "main": "lib/vueDragSelectPro.umd.min.js",
+  "types": "./dist/src/index.d.ts",
   "license": "MIT",
   "repository": "git@github.com:JanssenZhang/vue-drag-select.git",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "buildts": "tsc -p tsconfig.json",
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --name vueDragSelectPro --dest lib src/index.js"
   },
   "dependencies": {
     "core-js": "^2.6.5",
-    "vue": "^2.6.10",
-    "vue-drag-select-pro": "^1.0.4"
+    "vue": "^2.6.10"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
